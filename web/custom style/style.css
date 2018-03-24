@@ -2,8 +2,9 @@
 
 html,head,body{
     height: 100%;
-    
+
 }
+
 .center{
 
     display: table-cell;
@@ -19,7 +20,7 @@ html,head,body{
     background-size: cover;
     height: 100%;
     margin-bottom: 40px;
-    
+
 }
 
 .wrapper{
