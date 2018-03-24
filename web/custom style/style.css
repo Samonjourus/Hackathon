@@ -12,7 +12,7 @@ html,head,body{
 
 }
 #home{
-    background-image: url('/Users/Hector/Documents/Spring 2018/Google Hackaton NSBE 2018/Hackathon/web/style/welcome_pic.jpg');
+    background-image: url('../style/welcome_pic.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
