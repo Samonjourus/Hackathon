@@ -2,12 +2,8 @@
 
 html,head,body{
     height: 100%;
-<<<<<<< HEAD
-    background-color: #E3E7E8;
+    background-color: #F4F8F9;;
     
-=======
-
->>>>>>> b2f9e54a0d95d1bb069ff166657dea99f4ff4cff
 }
 
 .center{
@@ -27,6 +23,12 @@ html,head,body{
     margin-bottom: 40px;
 
 }
+
+nav a{
+    color: #F4F8F9;
+    font-size: 20px;
+}
+
 #home-button{
     background-color: transparent;
     text-decoration: none;
