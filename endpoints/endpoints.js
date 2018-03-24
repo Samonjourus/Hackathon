@@ -1,6 +1,7 @@
 const MONGOCLIENT = require('mongodb').MongoClient;
 const EXPRESS = require('express');
 const UTIL = require("../utility.js")
+const FS = require("fs")
 var router = EXPRESS.Router();
 
 //story a user's story in the database
@@ -23,12 +24,18 @@ router.post("/story", function(req, res, next){
           return;
         }
         else {
-          res.end(JSON.stringify({"status":"good"}))
-          client.close();
-          return;
-        }
+        res.end(JSON.stringify({"status":"good"}))
+        client.close();
+        return;
+          }
+        })
       })
     })
+  })
+
+router.get("/story", function(req,res){
+  FS.readFile("../web/share/story/index.html", "utf8", function(err, data){
+    res.end(data);
   })
 })
 //allows a user to log in to access superuser-only information
