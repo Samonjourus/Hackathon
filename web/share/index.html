@@ -6,19 +6,29 @@
   </head>
   <body>
     <section>
-      <h1>Title</h1>
+      <h1>Share Your Story</h1>
       <p>Title of your story</p>
       <form action="/api/story">
         Title: <br>
        <input type="text" name="Title" placeholder="First user story"><br>
         <br>
-        <p>Description:</p>
+        Description: <br>
         <textarea rows="4" cols="50" placeholder="Description"></textarea>
         <br><br>
         Location: <br>
        <input type="text" name="Location" placeholder="City, State"><br>
-        <br><br>
-        <input type="submit" value="Submit">
+       <br><br>
+       Add Tags: <br>
+       <input type="checkbox" name="case1" value="Domestic Violence"> Domestic Violence
+       <br>
+       <input type="checkbox" name="case2" value="Sexual Assault"> Sexual Assault
+       <br>
+       <input type="checkbox" name="case3" value="Child Abuse"> Child Abuse
+       <br>
+       <input type="checkbox" name="case4" value="Other"> Other
+       <br>
+       <br><br>
+       <input type="submit" value="Submit">
       </form>
     </section>
 
