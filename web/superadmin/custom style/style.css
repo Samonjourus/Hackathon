@@ -1,0 +1,50 @@
+/* home and navbar  */
+
+html,head,body{
+    height: 100%;
+    background-color: #F4F8F9;
+    
+}
+
+.center{
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+
+}
+
+nav {
+    background-color: #3FAF91;
+    background-image: url('../../style/welcome_pic.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:20px;
+}
+
+nav a{
+    color: #F4F8F9;
+}
+
+#log: :hover {
+    cursor: pointer;
+}
+
+
+
+#home{
+    /* background-image: url('../../style/welcome_pic.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+
+}
+
+.btn-white{
+    
+    padding: 12px 26px;
+   
+}
+
