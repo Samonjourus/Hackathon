@@ -5,11 +5,7 @@ html,head,body{
     background-color: #F4F8F9;
 
 }
-<<<<<<< HEAD
-nav {
-    
-    background-image: url('../../style/welcome_pic.jpg'); 
-=======
+
 
 .center{
 
@@ -20,13 +16,6 @@ nav {
 
 }
 
-.site-footer{
-  background-color:#3FAF91;
-  color:#fff;
-  margin-top: 10px;
-  padding-top: 10px;
-
-}
 
 .bottom-footer{
   border-top: 1px solid #b2b2b2;
@@ -48,7 +37,6 @@ footer a{
 nav {
     background-color: #3FAF91;
     background-image: url('../../style/welcome_pic.jpg');
->>>>>>> 801b7655239d39fefc1a1930c69cd87edaeccb55
     background-repeat: no-repeat;
     background-size: cover;
     font-size:20px;
@@ -154,7 +142,6 @@ nav a:hover {
     border-radius: 10px;
     margin: 10px 0px;
 }
-<<<<<<< HEAD
 
 .site-footer{
     background-color:#3FAF91;
@@ -164,9 +151,5 @@ nav a:hover {
     text-align: center;
     padding: 20px 30%;
     width: 100%;
-  
-  }
-  
 
-=======
->>>>>>> 801b7655239d39fefc1a1930c69cd87edaeccb55
+  }
