@@ -2,8 +2,9 @@
 
 html,head,body{
     height: 100%;
+    
 }
-#quote{
+.center{
 
     display: table-cell;
     vertical-align: middle;
@@ -17,12 +18,41 @@ html,head,body{
     background-position: center;
     background-size: cover;
     height: 100%;
+    margin-bottom: 40px;
+    
 }
 
-#quote-wrapper{
+.wrapper{
     display: table;
     height: 100%;
     width: 100%;
     padding-bottom: 30%;
-    
+
+}
+
+/* ABOUT */
+
+#about h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+#about p{
+
+    color: #3FAF91;
+    font-size: 20px;
+
+}
+#rose{
+
+    padding-top: 30px;
+    height: 40%;
+    width: 95%;
+}
+
+#border{
+    border: 2px solid #9DC5BB;
+    margin: 20px 10% 0 10%;
+    border-radius: 10px;
 }
