@@ -50,8 +50,17 @@ nav a{
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+nav a:hover {
+    color: black;
+}
+
+#quote{
+    font-size: 40px;
+=======
 footer a{
   color: #FFF;
+>>>>>>> b2e6aa85450c40800c9bebc1c52c8beb829ad512
 }
 
 #home-button{
@@ -60,16 +69,18 @@ footer a{
     width: 100%;
 }
 
-.btn-general {
-    background-color: black;
-    width: 180px;
-    height: 50px;
-    border-width: 2px;
-    border-radius: 0;
-    padding: 20px 26px 20px 26px;
-    font-size: 16px;
-    text-transform: uppercase;
+#home-button a{
+    color: white;
+    font-size: 30px;
 }
+
+#home-button button:hover a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 
 .wrapper{
     display: table;
