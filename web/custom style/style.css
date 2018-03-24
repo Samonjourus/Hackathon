@@ -11,6 +11,8 @@ html,head,body{
   color:#fff;
   margin-top: 10px;
   padding-top: 10px;
+  text-align: center;
+  padding: 20px 30%;
 
 }
 
@@ -50,17 +52,12 @@ nav a{
     font-size: 20px;
 }
 
-<<<<<<< HEAD
 nav a:hover {
     color: black;
 }
 
 #quote{
     font-size: 40px;
-=======
-footer a{
-  color: #FFF;
->>>>>>> b2e6aa85450c40800c9bebc1c52c8beb829ad512
 }
 
 #home-button{
@@ -133,4 +130,10 @@ footer a{
 #silence img{
     border-radius: 10px;
     margin: 10px 0px;
+}
+/* footer */
+
+#footer{
+    width: 100%;
+    color:
 }

@@ -133,3 +133,14 @@ nav a:hover {
     border-radius: 10px;
     margin: 10px 0px;
 }
+.site-footer{
+    background-color:#3FAF91;
+    color:#fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding: 20px 30%;
+    width: 100%;
+  
+  }
+  

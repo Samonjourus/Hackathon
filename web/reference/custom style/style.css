@@ -5,18 +5,8 @@ html,head,body{
     background-color: #F4F8F9;
     
 }
-
-.center{
-
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-
-}
-
 nav {
-    background-color: #3FAF91;
+    
     background-image: url('../../style/welcome_pic.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,10 +15,16 @@ nav {
 
 nav a{
     color: #F4F8F9;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: black;
 }
 
 #content{
     color: #3FAF91;
+    padding-top: 20px;
 }
 
 #introduction {
@@ -117,4 +113,16 @@ nav a{
     border-radius: 10px;
     margin: 10px 0px;
 }
+
+.site-footer{
+    background-color:#3FAF91;
+    color:#fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding: 20px 30%;
+    width: 100%;
+  
+  }
+  
 
