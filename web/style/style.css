@@ -1,0 +1,14 @@
+/* home and navbar  */
+
+#quote{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+#quote-wrapper{
+    display: table;
+    height: 1000px;
+    width: 100%;
+}
