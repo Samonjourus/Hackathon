@@ -2,8 +2,29 @@
 
 html,head,body{
     height: 100%;
-    background-color: #F4F8F9;;
-    
+    background-color: #F4F8F9;
+
+}
+
+.site-footer{
+  background-color:#3FAF91;
+  color:#fff;
+  margin-top: 10px;
+  padding-top: 10px;
+
+}
+
+.bottom-footer{
+  border-top: 1px solid #b2b2b2;
+  margin-top:10px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: #b2b2b2;
+}
+
+.bottom-footer{
+  color:#fff;
+
 }
 
 .center{
@@ -27,6 +48,10 @@ html,head,body{
 nav a{
     color: #F4F8F9;
     font-size: 20px;
+}
+
+footer a{
+  color: #FFF;
 }
 
 #home-button{
@@ -55,9 +80,9 @@ nav a{
 }
 
 .btn-white{
-    
+
     padding: 12px 26px;
-   
+
 }
 
 /* ABOUT */
@@ -98,4 +123,3 @@ nav a{
     border-radius: 10px;
     margin: 10px 0px;
 }
-
