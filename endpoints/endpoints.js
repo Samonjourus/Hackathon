@@ -78,4 +78,7 @@ router.post("/login", function(req,res,next){
   })
 })
 
+router.get("/story", function(){
+  
+})
 module.exports = router;
