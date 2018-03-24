@@ -7,11 +7,15 @@ html,head,body{
 
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
+    color: white;
 
 }
 #home{
     background-image: url('/Users/Hector/Documents/Spring 2018/Google Hackaton NSBE 2018/Hackathon/web/style/welcome_pic.jpg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100%;
 }
 
@@ -19,5 +23,6 @@ html,head,body{
     display: table;
     height: 100%;
     width: 100%;
+    padding-bottom: 30%;
     
 }
