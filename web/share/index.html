@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
     function sendData(){
       data = {"Title":document.getElementById("titleText").value,
@@ -45,14 +50,12 @@
     <title>Anonymously Share Your Story </title>
   </head>
   <body>
-<<<<<<< HEAD
 
 
-=======
-    <img src="women share your story page picture.jpg" alt= "strertch in sun" width="460" height="345">
->>>>>>> 6d63f4d38713ab9862c2e360c848746b6bb0c401
-    <section>
-      <center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"
+    <!--Input Section-->
         <h1>Share Your Story</h1>
       <p>Title of your story</p>
         Title: <br>
@@ -61,10 +64,14 @@
         Description: <br>
         <textarea rows="4" cols="50" id="descriptionText" placeholder="Description"></textarea>
         <br><br>
+
+        <!--Upload Input-->
         <table>
           <tr>Upload (Optional)     </tr><tr><input type="file" id="fileInput" name="" multiple></tr>
         </table>
         <br>
+
+        <!--Location Input-->
         Location: <br>
        <input type="text" name="Location" id="locationText" placeholder="City, State"><br>
        <br><br>
@@ -76,16 +83,17 @@
        <input type="checkbox" id="childAbuseCheckBox" name="case3" value="Child Abuse"> Child Abuse
        <br>
        <input type="checkbox" id="otherCheckBox" name="case4" value="Other"> Other
+       <!--Location Input-->
+
+       <!--Send Data-->
        <br>
        <br><br>
      <button onclick="sendData()">submit</button>
-   </center>
-     </section>
-   <center>
+   </div>
+   </div>
+ </div>
 
 
-     <p>Design the skeleton of write story page</p>
-   </center>
 
   </body>
 </html>
