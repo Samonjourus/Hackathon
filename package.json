@@ -1,0 +1,15 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Web application that allows people to anonymously post stories that super users can view and then act on.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.5"
+  }
+}
