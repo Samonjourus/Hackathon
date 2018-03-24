@@ -5,14 +5,26 @@ html,head,body{
     background-color: #F4F8F9;
 
 }
+<<<<<<< HEAD
+nav {
+    
+    background-image: url('../../style/welcome_pic.jpg'); 
+=======
+
+.center{
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+
+}
 
 .site-footer{
   background-color:#3FAF91;
   color:#fff;
   margin-top: 10px;
   padding-top: 10px;
-  text-align: center;
-  padding: 20px 30%;
 
 }
 
@@ -29,22 +41,17 @@ html,head,body{
 
 }
 
-.center{
-
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-
+footer a{
+  color:#fff;
 }
-#home{
-    background-image: url('../style/welcome_pic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    margin-bottom: 40px;
 
+nav {
+    background-color: #3FAF91;
+    background-image: url('../../style/welcome_pic.jpg');
+>>>>>>> 801b7655239d39fefc1a1930c69cd87edaeccb55
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:20px;
 }
 
 nav a{
@@ -56,28 +63,44 @@ nav a:hover {
     color: black;
 }
 
-#quote{
-    font-size: 40px;
+#content{
+    color: #3FAF91;
+    padding-top: 20px;
 }
 
+#introduction {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+#home{
+    /* background-image: url('../../style/welcome_pic.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+
+}
 #home-button{
     background-color: transparent;
     text-decoration: none;
     width: 100%;
 }
 
-#home-button a{
-    color: white;
-    font-size: 30px;
+.btn-general {
+    background-color: black;
+    width: 180px;
+    height: 50px;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 20px 26px 20px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
-
-#home-button button:hover a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
 
 .wrapper{
     display: table;
@@ -131,9 +154,19 @@ nav a:hover {
     border-radius: 10px;
     margin: 10px 0px;
 }
-/* footer */
+<<<<<<< HEAD
 
-#footer{
+.site-footer{
+    background-color:#3FAF91;
+    color:#fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding: 20px 30%;
     width: 100%;
-    color:
-}
+  
+  }
+  
+
+=======
+>>>>>>> 801b7655239d39fefc1a1930c69cd87edaeccb55

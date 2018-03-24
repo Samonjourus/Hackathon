@@ -3,7 +3,7 @@
 html,head,body{
     height: 100%;
     background-color: #F4F8F9;
-    
+
 }
 
 .center{
@@ -15,9 +15,35 @@ html,head,body{
 
 }
 
+.site-footer{
+  background-color:#3FAF91;
+  color:#fff;
+  margin-top: 10px;
+  padding-top: 10px;
+
+}
+
+.bottom-footer{
+  border-top: 1px solid #b2b2b2;
+  margin-top:10px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: #b2b2b2;
+}
+
+.bottom-footer{
+  color:#fff;
+
+}
+
+footer a{
+  color:#fff;
+}
+
+
 nav {
     background-color: #3FAF91;
-    background-image: url('../../style/welcome_pic.jpg'); 
+    background-image: url('../../style/welcome_pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-size:20px;
@@ -25,8 +51,12 @@ nav {
 
 nav a{
     color: #F4F8F9;
+    font-size: 20px;
 }
 
+nav a:hover {
+    color: black;
+}
 #content{
     color: #3FAF91;
 }
@@ -85,9 +115,9 @@ nav a{
 }
 
 .btn-white{
-    
+
     padding: 12px 26px;
-   
+
 }
 
 /* ABOUT */
@@ -128,4 +158,14 @@ nav a{
     border-radius: 10px;
     margin: 10px 0px;
 }
-
+.site-footer{
+    background-color:#3FAF91;
+    color:#fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding: 20px 30%;
+    width: 100%;
+  
+  }
+  
