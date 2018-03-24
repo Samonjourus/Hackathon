@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script>
+    function sendData(){
+      var client = new XMLHttpRequest();
+      data = {"Title":titleText.value,"Description":descriptionText.value};
+      client.Open("POST", "http://127.0.0.1/api/story", true);
+      client.setRequestHeader("Content-type", "application/json");
+      client.onload(function() {
+        console.log("success");
+      })
+      client.send(data);
+    }
+    </script>
     <meta charset="utf-8">
     <title>Anonymously Share Your Story </title>
   </head>
@@ -8,18 +20,21 @@
     <section>
       <h1>Title</h1>
       <p>Title of your story</p>
-      <form action="/api/story">
+      <form action="/api/story" method="post">
         Title: <br>
-       <input type="text" name="Title" placeholder="First user story"><br>
+       <input type="text" name="Title" id="titleText" placeholder="First user story"><br>
         <br>
         <p>Description:</p>
-        <textarea rows="4" cols="50" placeholder="Description"></textarea>
+        <textarea rows="4" cols="50" id="descriptionText" placeholder="Description"></textarea>
         <br><br>
-        <input type="submit" value="Submit">
+        <table>
+          <tr>Upload (Optional)     </tr><tr><input type="file" name="" value=""></tr>
+        </table>
+        <input type="submit" onclick="sendData()">
       </form>
     </section>
 
-    
+
 
     <p>Design the skeleton of write story page</p>
   </body>
