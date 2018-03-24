@@ -1,86 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script>
-    function upload(file, data){
-        let xhr = new XMLHttpRequest();
-        xhr.onload=function(){data.Files.push(xhr.response);}
-        formData = new FormData();
-        console.log(file);
-        formData.append('fileupload', file, file.name);
-        xhr.open('POST', "/api/imageUpload", false);
-        xhr.send(formData);
-        console.log("sent");
-    }
-    function sendData(){
-      let data = {"Title":document.getElementById("titleText").value,
-              "Description":document.getElementById("descriptionText").value,
-              "Location":document.getElementById("locationText").value,
-              "Files":[]
-             }
-      if(document.getElementById("fileInput").value != "")
-        {
-          let Files = [];
-          console.log();
-          for(let i = 0; i < document.getElementById("fileInput").files.length; i++){
-            upload(document.getElementById("fileInput").files[i], data)
 
-/*
-            let file = document.getElementById("fileInput").files[i];
-            let reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = function(srcData){
-              let imageClient = new XMLHttpRequest();
-              imageClient.open("POST", "http://127.0.0.1/api/imageUpload", true);
-              imageClient.setRequestHeader("Content-type", "application/octet-stream");
-              //console.log(srcData.target.result.substring(srcData.target.result.indexOf(",")+1));
-              console.log(srcData.target.result.substring(srcData.target.result.indexOf(",")+1));
-              imageClient.send(srcData.target.result.substring(srcData.target.result.indexOf(",")+1))
-            }*/
-          }
-          //console.log(Files);
-          //data.Files = Files;
-          console.log(data);
-        }
-      let tags = [];
-      if(document.getElementById("domesticViolenceCheckBox").checked == true)
-        tags.push(document.getElementById("domesticViolenceCheckBox").value);
-      if(document.getElementById("sexualAssaultCheckBox").checked == true)
-        tags.push(document.getElementById("sexualAssaultCheckBox").value);
-      if(document.getElementById("childAbuseCheckBox").checked == true)
-        tags.push(document.getElementById("childAbuseCheckBox").value);
-      data.tags=tags;
-      let client = new XMLHttpRequest();
-      client.open("POST", "http://127.0.0.1/api/story", true);
-      client.setRequestHeader("Content-type", "application/json");
-      client.addEventListener("load", function() {
-        console.log("ok");
-        let newPageClient = new XMLHttpRequest();
-        newPageClient.open("Get", "http://127.0.0.1/share/story")
-        newPageClient.send();
-        //window.location.href="/share/story";
-      })
-      console.log(data);
-      client.send(JSON.stringify(data));
-    }
-    </script>
-    <meta charset="utf-8">
-    <title>Anonymously Share Your Story </title>
+          <!-- meta tags -->
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE-edge">
+          <meta name="viewport" content="width-device-width,initial-scale=1">
+
+          <!-- Title -->
+          <title>Anonymously Share Your Story </title>
+
+          <!-- CSS Bootstrap -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+          <!-- Custom Style CSS -->
+          <link rel="stylesheet" href="custom style/style.css"/>
   </head>
+
   <body>
-    <section>
-      <h1>Share Your Story</h1>
-      <p>Title of your story</p>
+      <section id="home" >
+          <header>
+                <nav class="navbar navbar-expand-md ">
+                    <a href="../index.html" class="navbar-brand">Bloom up</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-stretch" id="myNavbar">
+                         <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Share your story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../reference/index.html">You are not alone</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                  </nav>
+            </header>
+    <section id="content">
+      <center>
+        <div id="introduction">
+            <h1>This is how it works!</h1>
+            <img src="../style/share_story.jpg">
+            <p>We understand that sometimes it is hard to speak to someone about what is going on in your life. So we created this portal so you can confidentely and anonimously share your stories with authorities and organizations ready to step up on your behalf</p>
+        </div>
+
+
+        <h2>Share Your Story</h2>
+        <p>Title of your story</p>
         Title: <br>
        <input type="text" name="Title" id="titleText" placeholder="First user story"><br>
         <br>
         Description: <br>
         <textarea rows="4" cols="50" id="descriptionText" placeholder="Description"></textarea>
         <br><br>
+
+        <!--Upload Input-->
         <table>
           <tr>Upload (Optional)     </tr><tr><input type="file" id="fileInput" name="" multiple></tr>
         </table>
         <br>
+
+        <!--Location Input-->
         Location: <br>
        <input type="text" name="Location" id="locationText" placeholder="City, State"><br>
        <br><br>
@@ -92,13 +74,27 @@
        <input type="checkbox" id="childAbuseCheckBox" name="case3" value="Child Abuse"> Child Abuse
        <br>
        <input type="checkbox" id="otherCheckBox" name="case4" value="Other"> Other
+       <!--Location Input-->
+
+       <!--Send Data-->
        <br>
        <br><br>
      <button onclick="sendData()">submit</button>
-    </section>
+
+   </center>
+     </section>
+   <center>
 
 
+   </center>
 
-    <p>Design the skeleton of write story page</p>
+
+   </div>
+   </div>
+ </div>
+
+
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
   </body>
 </html>

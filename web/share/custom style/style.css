@@ -2,7 +2,7 @@
 
 html,head,body{
     height: 100%;
-    background-color: #F4F8F9;;
+    background-color: #F4F8F9;
     
 }
 
@@ -14,21 +14,40 @@ html,head,body{
     color: white;
 
 }
-#home{
-    background-image: url('../style/welcome_pic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    margin-bottom: 40px;
 
+nav {
+    background-color: #3FAF91;
+    background-image: url('../../style/welcome_pic.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:20px;
 }
 
 nav a{
     color: #F4F8F9;
-    font-size: 20px;
 }
 
+#content{
+    color: #3FAF91;
+}
+
+#introduction {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+#home{
+    /* background-image: url('../../style/welcome_pic.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+
+}
 #home-button{
     background-color: transparent;
     text-decoration: none;
