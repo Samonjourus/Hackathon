@@ -1,10 +1,12 @@
 const EXPRESS = require('express');
 const BODYPARSER = require("body-parser")
 const FS = require("fs")
+const BUSBOY = require('connect-busboy');
 const ENDPOINTS = require("./endpoints/endpoints.js")
 var app = EXPRESS();
 
-app.use(BODYPARSER.urlencoded({extended:true}))
+app.use(BUSBOY())
+app.use(BODYPARSER.urlencoded({extended:true, upperBound:"100mb"}))
 app.use(BODYPARSER.json())
 
 app.use("/", function(req,res,next){

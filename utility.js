@@ -3,6 +3,10 @@ const PROMISE = require("promise");
 function savePictures(object){
   return new PROMISE(function(fulfill, reject){
     generateName();
+    if(object.Files.length != 0)
+      console.log("not empty");
+    else
+      console.log("empty");
     fulfill(object);
   })
 }
