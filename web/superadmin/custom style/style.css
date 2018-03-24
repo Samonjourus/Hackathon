@@ -25,6 +25,11 @@ nav {
 
 nav a{
     color: #F4F8F9;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: black;
 }
 
 #log: :hover {
