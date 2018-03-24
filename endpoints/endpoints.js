@@ -75,7 +75,11 @@ router.post("/login", function(req,res,next){
   })
 })
 
-router.get("/story", function(){
+router.get("/story", function(req, res){
+  console.log("ok");
+  let docs = {};
+  console.log(req.query.$from);
+  console.log(req.query.$count);
   MONGOCLIENT.connect("mongodb://localhost:27017", function(err, client){
     if(err){
       console.log(err);
@@ -84,7 +88,8 @@ router.get("/story", function(){
       return;
     }
     db = client.db("Hackathon")
-    db.collection("stories").find(document).toArray(function(err,results){
+    db.collection("stories").find({}).toArray(function(err,results){
+      console.log("past" + results.length);
       if(err){
         console.log(err);
         res.end(JSON.stringify({"status":"bad"}))
@@ -92,9 +97,21 @@ router.get("/story", function(){
         return;
       }
       else {
-      res.end(JSON.stringify({"status":"good"}))
-      client.close();
-      return;
+        let index = 0;
+        for(let i = req.query.$from;i < (+req.query.$count + +req.query.$from); i++)
+        {
+          docs[index]=results[i];
+          //console.log(i + " " + (+req.query.$count + +req.query.$from));
+          console.log(JSON.stringify(docs));
+          index++;
+          if(i ==  (+req.query.$count + +req.query.$from) - 1)
+          {
+            console.log("done");
+            res.end(JSON.stringify(docs))
+            client.close();
+            return;
+          }
+        }
       }
     })
   })
