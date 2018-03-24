@@ -3,7 +3,7 @@
 html,head,body{
     height: 100%;
     background-color: #F4F8F9;
-
+    
 }
 
 .center{
@@ -15,10 +15,9 @@ html,head,body{
 
 }
 
-
 nav {
     background-color: #3FAF91;
-    background-image: url('../../style/welcome_pic.jpg');
+    background-image: url('../../style/welcome_pic.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     font-size:20px;
@@ -26,29 +25,14 @@ nav {
 
 nav a{
     color: #F4F8F9;
-    font-size: 20px;
 }
 
-nav a:hover {
-    color: black;
-}
 #content{
     color: #3FAF91;
 }
 
 #introduction {
     margin-top: 20px;
-}
-
-#info{
-    padding-top: 100px;
-    font-size: 20px;
-    padding-right: 30px;
-}
-
-#form{
-    padding-top: 30px;
-    text-align: left;
 }
 
 
@@ -90,9 +74,9 @@ nav a:hover {
 }
 
 .btn-white{
-
+    
     padding: 12px 26px;
-
+   
 }
 
 /* ABOUT */
@@ -133,3 +117,4 @@ nav a:hover {
     border-radius: 10px;
     margin: 10px 0px;
 }
+
