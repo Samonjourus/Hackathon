@@ -1,0 +1,23 @@
+/* home and navbar  */
+
+html,head,body{
+    height: 100%;
+}
+#quote{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#home{
+    background-image: url('/Users/Hector/Documents/Spring 2018/Google Hackaton NSBE 2018/Hackathon/web/style/welcome_pic.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#quote-wrapper{
+    display: table;
+    height: 100%;
+    width: 100%;
+    
+}
