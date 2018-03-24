@@ -1,0 +1,99 @@
+/* home and navbar  */
+
+html,head,body{
+    height: 100%;
+<<<<<<< HEAD
+    background-color: #E3E7E8;
+    
+=======
+
+>>>>>>> b2f9e54a0d95d1bb069ff166657dea99f4ff4cff
+}
+
+.center{
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+
+}
+#home{
+    background-image: url('../style/welcome_pic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 40px;
+
+}
+#home-button{
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-general {
+    background-color: black;
+    width: 180px;
+    height: 50px;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 20px 26px 20px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.wrapper{
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30%;
+
+}
+
+.btn-white{
+    
+    padding: 12px 26px;
+   
+}
+
+/* ABOUT */
+
+#about h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+#about,#about p{
+
+    color: #3FAF91;
+    font-size: 20px;
+
+}
+#rose{
+
+    margin-top: 30px;
+    height: 60%;
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#border{
+    border: 2px solid #9DC5BB;
+    margin: 20px 10% 0 10%;
+    border-radius: 10px;
+}
+
+#silence{
+    text-align: center;
+}
+
+#silence img{
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
