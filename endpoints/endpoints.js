@@ -3,6 +3,8 @@ const EXPRESS = require('express');
 const UTIL = require("../utility.js")
 const FS = require("fs")
 var router = EXPRESS.Router();
+const MULTER = require('multer');
+var UPLOADS = MULTER({dest: './uploads/'});
 
 //story a user's story in the database
 router.post("/story", function(req, res, next){
@@ -32,10 +34,11 @@ router.post("/story", function(req, res, next){
       })
     })
   })
-
-router.get("/story", function(req,res){
-  FS.readFile("../web/share/story/index.html", "utf8", function(err, data){
-    res.end(data);
+router.post("/imageUpload",UPLOADS.any(), function(req,res){
+  console.log(req.files);
+  console.log(req.file);
+  FS.rename(req.files[0].filename, req.files[0].filename+".png",function(err){
+    res.end(req.files[0].filename+".png")
   })
 })
 //allows a user to log in to access superuser-only information
@@ -75,4 +78,7 @@ router.post("/login", function(req,res,next){
   })
 })
 
+router.get("/story", function(){
+  
+})
 module.exports = router;
