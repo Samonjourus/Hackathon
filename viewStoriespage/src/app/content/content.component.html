@@ -1,10 +1,10 @@
+
+
 <div class="header" *ngIf="ready">
     <table class="centered">
+     
       <tr>
-        <th><button type="button" name="submitQuery" (click)="query();">Query</button></th>
-      </tr>
-      <tr>
-        <th>Documents per a page</th><th><select (ngModelChange)="clear($event);" [(ngModel)]="documentsPerAPage" class="" name="documentsPerAPage">
+        <th>Documents per page</th><th><select (ngModelChange)="clear($event);" [(ngModel)]="documentsPerAPage" class="" name="documentsPerAPage">
           <option value="1">1</option>
           <option value="5">5</option>
           <option value="10">10</option>
@@ -13,12 +13,15 @@
           <option value="100">100</option>
         </select></th>
       </tr>
+      <tr>
+        <th><button class="btn btn-sm" type="button" name="submitQuery" (click)="query();">Query</button></th>
+      </tr>
     </table>
     <div *ngFor="let queryDocument of queryDocuments">
       <app-get-field #getField [document]="queryDocument"></app-get-field>
       <hr>
     </div>
     <table class="centeredBottom">
-      <th><div *ngIf="!previousDisabled"><button type="button" name="Previous" (click)="previousSet();"> Previous</button></div></th><th><div *ngIf="!nextDisabled"><button (click)="nextSet();" type="button" name="Next">Next</button></div></th>
+      <th><div *ngIf="!previousDisabled"><button class="btn btn-sm" type="button" name="Previous" (click)="previousSet();"> Previous</button></div></th><th><div *ngIf="!nextDisabled"><button class="btn btn-sm" (click)="nextSet();" type="button" name="Next">Next</button></div></th>
     </table>
 </div>
