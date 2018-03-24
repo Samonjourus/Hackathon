@@ -17,7 +17,7 @@
   </head>
 
   <body>
-      <section id="home" >
+    <section id="home" >
           <header>
                 <nav class="navbar navbar-expand-md ">
                     <a href="../index.html" class="navbar-brand">Bloom up</a>
@@ -42,46 +42,54 @@
         <div id="introduction">
             <h1>This is how it works!</h1>
             <img src="../style/share_story.jpg">
-            <p>We understand that sometimes it is hard to speak to someone about what is going on in your life. So we created this portal so you can confidentely and anonimously share your stories with authorities and organizations ready to step up on your behalf</p>
         </div>
 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" id="info">
+              <p>We understand that sometimes it is hard to speak to someone about what is going on in your life. So we created this portal so you can confidentely and anonimously share your stories with authorities and organizations ready to step up on your behalf</p>
+              <img src="../style/unity.jpg">
+            </div>
+            <div class="col-lg-6" id="form">
+              <h2 style="text-align: center">Share Your Story</h2>
+              <p>Title of your story</p>
+              Title: <br>
+              <input type="text" name="Title" id="titleText" placeholder="First user story"><br>
+              <br>
+              Description: <br>
+              <textarea rows="4" cols="50" id="descriptionText" placeholder="Description"></textarea>
+                <br><br>
 
-        <h2>Share Your Story</h2>
-        <p>Title of your story</p>
-        Title: <br>
-       <input type="text" name="Title" id="titleText" placeholder="First user story"><br>
-        <br>
-        Description: <br>
-        <textarea rows="4" cols="50" id="descriptionText" placeholder="Description"></textarea>
-        <br><br>
+              <!--Upload Input-->
+              <table>
+                <tr>Upload (Optional)     </tr><tr><input type="file" id="fileInput" name="" multiple></tr>
+              </table>
+              <br>
 
-        <!--Upload Input-->
-        <table>
-          <tr>Upload (Optional)     </tr><tr><input type="file" id="fileInput" name="" multiple></tr>
-        </table>
-        <br>
+              <!--Location Input-->
+              Location: <br>
+              <input type="text" name="Location" id="locationText" placeholder="City, State"><br>
+              <br><br>
+              Add Tags: <br>
+              <input type="checkbox" id="domesticViolenceCheckBox" name="case1" value="Domestic Violence"> Domestic Violence
+              <br>
+              <input type="checkbox" id="sexualAssaultCheckBox" name="case2" value="Sexual Assault"> Sexual Assault
+              <br>
+              <input type="checkbox" id="childAbuseCheckBox" name="case3" value="Child Abuse"> Child Abuse
+              <br>
+              <input type="checkbox" id="otherCheckBox" name="case4" value="Other"> Other
+              <!--Location Input-->
 
-        <!--Location Input-->
-        Location: <br>
-       <input type="text" name="Location" id="locationText" placeholder="City, State"><br>
-       <br><br>
-       Add Tags: <br>
-       <input type="checkbox" id="domesticViolenceCheckBox" name="case1" value="Domestic Violence"> Domestic Violence
-       <br>
-       <input type="checkbox" id="sexualAssaultCheckBox" name="case2" value="Sexual Assault"> Sexual Assault
-       <br>
-       <input type="checkbox" id="childAbuseCheckBox" name="case3" value="Child Abuse"> Child Abuse
-       <br>
-       <input type="checkbox" id="otherCheckBox" name="case4" value="Other"> Other
-       <!--Location Input-->
-
-       <!--Send Data-->
-       <br>
-       <br><br>
-     <button onclick="sendData()">submit</button>
+              <!--Send Data-->
+              <br>
+              <br><br>
+              <button onclick="sendData()">submit</button>
+            </div>
+          </div>
+        </div>
 
    </center>
-     </section>
+  </section>
    <center>
 
 
