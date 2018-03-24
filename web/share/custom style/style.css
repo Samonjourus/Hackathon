@@ -2,12 +2,8 @@
 
 html,head,body{
     height: 100%;
-<<<<<<< HEAD
     background-color: #E3E7E8;
     
-=======
-
->>>>>>> b2f9e54a0d95d1bb069ff166657dea99f4ff4cff
 }
 
 .center{
@@ -19,7 +15,7 @@ html,head,body{
 
 }
 #home{
-    background-image: url('../style/welcome_pic.jpg');
+    background-image: url('../../style/welcome_pic.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
