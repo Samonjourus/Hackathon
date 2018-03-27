@@ -54,7 +54,7 @@
       let newPageClient = new XMLHttpRequest();
       newPageClient.open("Get", "http://127.0.0.1/share/story")
       newPageClient.send();
-      //window.location.href="/share/story";
+      window.location.href="/share/story";
     })
     console.log(data);
     client.send(JSON.stringify(data));
